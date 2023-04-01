@@ -4,19 +4,6 @@
 
 using namespace std;
 
-void counting_sort(vector<int>& nums);
-
-int main(){
-    vector<int> nums = { 95, 94, 91, 98, 99, 90, 99, 93, 91, 92 };
-    counting_sort(nums);
-    for (int i = 0; i < nums.size(); i++) {
-        cout << nums[i] << " ";
-    }
-    cout << endl;
-
-    return 0;
-}
-
 void counting_sort(vector<int>& nums) {
     if (nums.empty()) return;
 
@@ -49,3 +36,16 @@ void counting_sort(vector<int>& nums) {
         nums[i] = sorted[i];
     }
 }
+
+int main(){
+    vector<int> nums = { 95, 94, 91, 98, 99, 90, 99, 93, 91, 92 };
+    counting_sort(nums);
+    for (int i = 0; i < nums.size(); i++) {
+        cout << nums[i] << " ";
+    }
+    cout << endl;
+
+    system("PAUSE");
+    return 0;
+}
+
